@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Playball');
+
+/* GENERAL STYLES */
+body {
+  background-color: ghostwhite;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  position: relative;
+  margin: 0 auto;
+}
+a {
+  /* color: #0033CC !important; */
+  color: #3366CC !important;
+}
+/* change hover color of nav links to golden-yellow */
+a:hover {
+  color: gold !important;
+}
+.container {
+  margin-left: 24%;
+}
+
+/* TOPBAR */
+.topbar {
+  background-image: url(./images/watercolor-topbar-blue.png);
+  height: 1.5rem;
+}
+
+/* NAVIGATION */
+.nav-link {
+  margin: 2% 5%;
+}
+
+/* SPA SECTIONS */
+#ourwedding,
+#details,
+#photos,
+#registry,
+#guestbook {
+  height: 1000px;
+}
+
+@media (min-width: 992px){
+    .navbar li {
+        margin-left : 0.5em;
+        margin-right : 0.5em;
+    }
+}
