@@ -2,7 +2,6 @@
 
 /* GENERAL STYLES */
 body {
-  background-color: ghostwhite;
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
   position: relative;
@@ -27,17 +26,31 @@ a:hover {
 }
 
 /* NAVIGATION */
-.nav-link {
+.navbar {
+  background-color: white !important;
+}
+
+.nav-link, .nav-link-left {
   margin: 2% 5%;
+}
+.nav-link-left {
+  margin-left: -20%;
 }
 
 /* SPA SECTIONS */
-#ourwedding,
+#home,
+#our-story,
 #details,
 #photos,
 #registry,
 #guestbook {
-  height: 1000px;
+  height: 100vh;
+}
+
+/* IMAGES */
+.section-img {
+  height:auto;
+  width: 100vw;
 }
 
 @media (min-width: 992px){
