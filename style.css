@@ -16,14 +16,14 @@ a:hover {
   color: gold !important;
 }
 .container {
-  margin-left: 24%;
+  margin-left: 20%;
 }
 
 /* TOPBAR */
 .topbar {
   background-image: url(./images/watercolor-topbar-blue.png);
   height: 1.0rem;
-  margin-left: -37%;
+  margin-left: -31%;
   opacity: 0.9;
   width: 100vw;
 }
