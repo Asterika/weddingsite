@@ -22,12 +22,17 @@ a:hover {
 /* TOPBAR */
 .topbar {
   background-image: url(./images/watercolor-topbar-blue.png);
-  height: 1.5rem;
+  height: 1.0rem;
+  margin-left: -37%;
+  opacity: 0.9;
+  width: 100vw;
 }
 
 /* NAVIGATION */
 .navbar {
   background-color: white !important;
+  /* background-image: url(images/watercolor-background-nav.png) !important;
+  opacity: 0.4; */
 }
 
 .nav-link, .nav-link-left {
@@ -48,9 +53,12 @@ a:hover {
 }
 
 /* IMAGES */
-.section-img {
+.section-img, .main-img {
   height:auto;
   width: 100vw;
+}
+.main-img {
+  margin-top: -1%;
 }
 
 @media (min-width: 992px){
