@@ -23,7 +23,7 @@ a:hover {
 .topbar {
   background-image: url(./images/watercolor-topbar-blue.png);
   height: 1.0rem;
-  margin-left: -31%;
+  /* margin-left: -31%; */
   opacity: 0.9;
   width: 100vw;
 }
@@ -34,6 +34,10 @@ a:hover {
   /* background-image: url(images/watercolor-background-nav.png) !important;
   opacity: 0.4; */
 }
+
+/* .navbar-toggler-icon {
+  background-image: url('images/heart.png');
+} */
 
 .nav-link, .nav-link-left {
   margin: 2% 5%;

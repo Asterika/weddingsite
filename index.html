@@ -13,12 +13,25 @@
 
   <!-- Add SPA scroll ability attached to navbar -->
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-default navbar-fixed-top" id="mNavbar">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
+      <!-- <div class="container"> -->
+      <!-- <a class="navbar-brand" href="#home" style="margin-top:-5%;"> -->
         <div class="topbar"></div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <a class="navbar-brand" href="#home" style="margin-top:-5%;">
+
+        <div class="container">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#exampleNavComponents" aria-expanded"false">
+              <i class="glyphicon glyphicon-align-justify"></i>
+          </button>
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+        <!-- COLLAPSE BUTTON -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="nav navbar-nav mr-auto">
-            <a class="navbar-brand" href="#home" style="margin-top:-5%;">
+            <!-- <a class="navbar-brand" href="#home" style="margin-top:-5%;"> -->
               <!-- <img src="images/dg-heart-arc-pink.png" width="170" height="170" alt=""> -->
               <img src="images/logo/dg-heart-red.png" width="175" height="175" alt="">
             </a>
@@ -53,6 +66,11 @@
     </div>
 
     <!-- MINIFIED JAVASCRIPT -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   </body>
 </html>
