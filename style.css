@@ -4,11 +4,115 @@
   --main-blue: #3366CC;
 }
 
-/* ===== GENERAL STYLES ====== */
+/* GENERAL STYLES */
 body {
-  color: ghostwhite;
-  font-family: "Playball", cursive;
-  height: 100%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  position: relative;
   margin: 0 auto;
+}
+a {
+  color: var(--main-blue) !important;
+}
+/* change hover color of nav links to golden-yellow */
+a:hover {
+  color: gold !important;
+}
+
+/* TOPBAR */
+.topbar {
+  background-image: url(./images/watercolor-topbar-blue.png);
+  height: 1.0rem;
+  opacity: 0.9;
   width: 100%;
+  /* width: 100vw; */
+}
+
+/* NAVIGATION */
+.nav {
+  margin-left: 14%;
+}
+.navbar {
+  background-color: white !important;
+  /* border: 3px solid red; */
+}
+/* #navbarSupportedContent {
+  border: 3px solid hotpink;
+} */
+/* .navbar-brand {
+  margin: 0;
+  padding: 0;
+  border: 3px solid gold;
+} */
+/* .glyphicon {
+  border: 3px solid lime;
+}
+button {
+  border: 3px solid fuchsia;
+} */
+
+
+.logo {
+  height: 200px;
+  /* margin-left: 65%; */
+  margin-top: -38%;
+  width: 200px;
+  /* border: 3px solid aqua; */
+}
+
+/* SPA SECTIONS */
+#home,
+#our-story,
+#details,
+#photos,
+#registry,
+#guestbook {
+  height: 100vh;
+}
+
+/* IMAGES */
+.section-img, .main-img {
+  height:auto;
+  width: 100%;
+}
+.main-img {
+  margin-top: -1%;
+}
+
+/* MARGINS */
+.ml-10 {
+  margin-left: 10%;
+}
+.ml-35 {
+  margin-left: 35%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 850px){
+    /* .navbar li { */
+        /* margin: 1.5em 0.5em 0.5em 1.5em; */
+        /* margin: 0.2em; */
+    /* } */
+    .logo {
+      margin-left: 10%;
+    }
+    a {
+      background-color:transparent !important;
+    }
+}
+@media screen and (max-width: 850px){
+  .main-img, .section-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100vw;
+  }
+  .indent {
+    margin-left: 20%;
+  }
+  .indent-first {
+    margin-left: 17%;
+  }
+  a {
+    background-color:transparent !important;
+  }
 }
