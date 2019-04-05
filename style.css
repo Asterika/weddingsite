@@ -34,16 +34,19 @@ a:hover {
   /* background-image: url(images/watercolor-background-nav.png) !important;
   opacity: 0.4; */
 }
-
-/* .navbar-toggler-icon {
-  background-image: url('images/heart.png');
-} */
-
-.nav-link, .nav-link-left {
-  margin: 2% 5%;
+.navbar-brand {
+  margin: 0;
+  padding: 0;
 }
-.nav-link-left {
-  margin-left: -20%;
+.logo {
+  height: 175px;
+  margin-left: 65%;
+  margin-top: -20%;
+  width: 175px;
+}
+.nav li  {
+  margin: 4%;
+  margin-left: 36%;
 }
 
 /* SPA SECTIONS */
@@ -59,15 +62,34 @@ a:hover {
 /* IMAGES */
 .section-img, .main-img {
   height:auto;
-  width: 100vw;
+  width: 100%;
 }
 .main-img {
   margin-top: -1%;
 }
 
-@media (min-width: 992px){
+/* MARGINS */
+.ml-10 {
+  margin-left: 10%;
+}
+.ml-35 {
+  margin-left: 35%;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 750px){
     .navbar li {
-        margin-left : 0.5em;
-        margin-right : 0.5em;
+        /* margin: 1.5em 0.5em 0.5em 1.5em; */
+        margin: 0.5em;
     }
+    .logo {
+      margin-left: 20%;
+    }
+}
+@media (max-width: 750px){
+  .main-img, .section-img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+  }
 }
