@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
 }
 a {
+  background-color: transparent !important;
   color: var(--main-blue) !important;
   text-decoration: none;
 }
@@ -96,17 +97,15 @@ a:hover {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 850px){
-    /* .navbar li { */
-        /* margin: 1.5em 0.5em 0.5em 1.5em; */
-        /* margin: 0.2em; */
-    /* } */
-    /* .logo {
-      margin-left: 10%;
-    } */
-    a {
-      background-color:transparent !important;
-    }
+@media screen and (max-width: 850px){
+  .logo {
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 849px) and (min-width:320px){
+  .logo {
+    margin-left: -0.2em;
+  }
 }
 @media screen and (max-width: 850px){
   .main-img, .section-img {
@@ -134,7 +133,6 @@ a:hover {
     display: block;
   }
 }
-
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 850px) {
   .topnav.responsive {
