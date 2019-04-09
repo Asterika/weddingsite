@@ -97,16 +97,19 @@ a:hover {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 850px){
+/* logo placement for iPad Pro */
+@media screen and (max-width: 1400px) and (min-width:855px){
   .logo {
-    margin-left: 2em;
+    margin-left: -1.2em;
   }
 }
-@media screen and (max-width: 849px) and (min-width:320px){
+/* logo placement for iPhones, Pixel, and Galaxy */
+@media screen and (max-width: 854px) and (min-width:320px){
   .logo {
-    margin-left: -0.2em;
+    margin-left: 1em;
   }
 }
+/* general media queries */
 @media screen and (max-width: 850px){
   .main-img, .section-img {
     height: 100%;
