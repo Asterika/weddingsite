@@ -4,55 +4,31 @@
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- BOOTSTRAP & CUSTOM CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+    />
     <title>Watercolor Wedding Site</title>
   </head>
 
   <!-- Add SPA scroll ability attached to navbar -->
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-default navbar-expand-lg navbar-fixed-top">
-      <!-- <div class="container"> -->
-      <!-- <a class="navbar-brand" href="#home" style="margin-top:-5%;"> -->
-        <div class="topbar"></div>
-
-        <!-- <a class="navbar-brand" href="#home" style="margin-top:-5%;"></a> -->
-
-        <!-- <div id="#containerPlacingLogo" class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#"><img src="images/logo/dg-heart-red.png" class="img-responsive logo"/></a>
-          </div> -->
-
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
-              <i class="glyphicon glyphicon-align-justify"></i>
-          </button>
-          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-
-      <a class="navbar-brand" href="#home"><img src="images/logo/dg-heart-red.png" class="img-responsive logo"/>
-
-        <!-- COLLAPSE BUTTON -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav mr-auto">
-            <!-- <a class="navbar-brand" href="#home" style="margin-top:-5%;"> -->
-              <!-- <img src="images/dg-heart-arc-pink.png" width="170" height="170" alt=""> -->
-              <!-- <img src="images/logo/dg-heart-red.png" width="175" height="175" alt=""> -->
-            <!-- <li class="nav-link-left"><a href="#home"><img src="images/logo/dg-redheart-sm.png" width="100" height="100" alt="David and Gwen Red Heart Wedding Logo"/></a></li> -->
-            <!-- <li class="nav-link"><a class="navbar-brand" href="#home"><img src="images/logo/dg-heart-red.png" class="img-responsive logo"/></a></li> -->
-            <!-- <li class="nav-link"><a href="#home"><img src="images/logo/dg-heart-red.png"/ height="120" width="120"></a></li> -->
-            <li class="nav-link indent-first"><a href="#our-story">Our Story</a></li>
-            <li class="nav-link indent"><a href="#details">Details</a></li>
-            <li class="nav-link indent"><a href="#photos">Photos</a></li>
-            <li class="nav-link indent"><a href="#registry">Registry</a></li>
-            <li class="nav-link indent"><a href="#guestbook">Guestbook</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div class="topbar"></div>
+    <div class="topnav" id="myTopnav">
+      <a href="/" class="active"><img src="images/logo/dg-red-heart.png" class="logo" alt="David Loves Gwen Logo"/></a>
+      <a href="/ourwedding">Our Wedding</a>
+      <a href="/details">Details</a>
+      <a href="/photos">Photos</a>
+      <a href="/registry">Registry</a>
+      <a href="/guestbook">Guestbook</a>
+      <a href="javascript:void(0);" class="icon" onclick="runNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
     <div id="home" class="container-fluid">
       <img src="images/weddingrings.jpg" class="main-img" alt="">
@@ -73,12 +49,17 @@
       <img src="images/fountain-pen.jpg" class="section-img" alt="">
     </div>
 
-    <!-- MINIFIED JAVASCRIPT -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <!-- JAVASCRIPT -->
+    <!-- JS -->
+    <script type="text/javascript">
+      function runNav() {
+        var x = document.getElementById("myTopnav")
+        if (x.className === "topnav") {
+          x.className += " responsive"
+        } else {
+          x.className = "topnav"
+        }
+      }
+    </script>
   </body>
 </html>

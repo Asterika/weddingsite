@@ -13,6 +13,7 @@ body {
 }
 a {
   color: var(--main-blue) !important;
+  text-decoration: none;
 }
 /* change hover color of nav links to golden-yellow */
 a:hover {
@@ -28,36 +29,43 @@ a:hover {
   /* width: 100vw; */
 }
 
-/* NAVIGATION */
-.nav {
-  margin-left: 14%;
-}
-.navbar {
-  background-color: white !important;
-  /* border: 3px solid red; */
-}
-/* #navbarSupportedContent {
-  border: 3px solid hotpink;
-} */
-/* .navbar-brand {
-  margin: 0;
-  padding: 0;
-  border: 3px solid gold;
-} */
-/* .glyphicon {
-  border: 3px solid lime;
-}
-button {
-  border: 3px solid fuchsia;
-} */
-
+/* ===== NAVIGATION ====== */
+/* Citation: Please note that this is an adaptation of code provided by WS3 Schools at: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 
 .logo {
-  height: 200px;
-  /* margin-left: 65%; */
-  margin-top: -38%;
-  width: 200px;
-  /* border: 3px solid aqua; */
+  height: 50px;
+  object-fit: contain;
+  width: 210px;
+}
+
+/* Add styling to the main nav container */
+.topnav {
+  overflow: hidden;
+  text-align: center;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  display: inline-block;
+  color: var(--fresh-green);
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.7em;
+  padding-bottom: 1em;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgba(74, 189, 172, 0.9);
+  color: white;
+}
+/* Add an active class to highlight the current page */
+.active {
+  /* background-color: var(--fresh-green); */
+  color: var(--fresh-green);
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
 /* SPA SECTIONS */
@@ -93,9 +101,9 @@ button {
         /* margin: 1.5em 0.5em 0.5em 1.5em; */
         /* margin: 0.2em; */
     /* } */
-    .logo {
+    /* .logo {
       margin-left: 10%;
-    }
+    } */
     a {
       background-color:transparent !important;
     }
@@ -110,9 +118,36 @@ button {
     margin-left: 20%;
   }
   .indent-first {
-    margin-left: 17%;
+    margin-left: 20%;
   }
   a {
     background-color:transparent !important;
+  }
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 850px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 850px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
