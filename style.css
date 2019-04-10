@@ -41,8 +41,11 @@ a:hover {
 
 /* Add styling to the main nav container */
 .topnav {
+  background-color: white;
   overflow: hidden;
   text-align: center;
+  position: fixed;
+  width: 100vw;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -115,15 +118,6 @@ a:hover {
     height: 100%;
     object-fit: cover;
     width: 100vw;
-  }
-  .indent {
-    margin-left: 20%;
-  }
-  .indent-first {
-    margin-left: 20%;
-  }
-  a {
-    background-color:transparent !important;
   }
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
