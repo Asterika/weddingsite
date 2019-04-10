@@ -1,14 +1,4 @@
-$(function() {
-  // shows the "X" icon
-  $('#bs-example-navbar-collapse-1')
-    .on('shown.bs.collapse', function() {
-      $('#navbar-hamburger').addClass('hidden');
-      $('#navbar-close').removeClass('hidden');
-    })
-    // shows the hamburger icon
-    .on('hidden.bs.collapse', function() {
-      $('#navbar-hamburger').removeClass('hidden');
-      $('#navbar-close').addClass('hidden');
-    });
-
-});
+// $('#show-menu').on('click', function(e) {
+//   $('.label-show-menu'.removeClass('fa fa-bars').addClass('fa fa-times')
+//   $('#menu').toggleClass('expanded');
+// });
